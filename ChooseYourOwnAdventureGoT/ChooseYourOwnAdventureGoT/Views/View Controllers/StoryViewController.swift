@@ -21,6 +21,9 @@ class StoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
+        let backButton = UIBarButtonItem(title: "🗺 Start a New Adventure", style: UIBarButtonItem.Style.plain, target: self, action: #selector(UIWebView.goBack))
+                navigationItem.leftBarButtonItem = backButton
+                navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Bradley Hand", size: 20)!], for: UIControl.State.normal)
     }
     
     
@@ -45,8 +48,13 @@ class StoryViewController: UIViewController {
         storyChapterDescriptionLabel.text = StoryController.shared.getStoryText()
         storyChapterImageView.image = StoryController.shared.getStoryImage()
 
-        
-        storyChoice1ButtonText.setTitle(StoryController.shared.getChoice1(), for: .normal)
-        storyChoice2ButtonText.setTitle(StoryController.shared.getChoice2(), for: .normal)
+        if StoryController.shared.getChoice1() == "" {
+                    storyChoice1ButtonText.isHidden = true
+                    storyChoice2ButtonText.isHidden = true
+                } else {
+                    storyChapterImageView.image = StoryController.shared.getStoryImage()
+                    storyChoice1ButtonText.setTitle(StoryController.shared.getChoice1(), for: .normal)
+                    storyChoice2ButtonText.setTitle(StoryController.shared.getChoice2(), for: .normal)
+                }
     }
 }

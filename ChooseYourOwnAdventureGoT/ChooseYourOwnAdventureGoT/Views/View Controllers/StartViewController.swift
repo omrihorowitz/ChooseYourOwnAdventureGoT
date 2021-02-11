@@ -18,6 +18,7 @@ class StartViewController: UIViewController {
     //MARK: - Actions
 
     @IBAction func winterfellButtonTapped(_ sender: Any) {
+        StoryController.shared.storyNum = 0
     }
     
     

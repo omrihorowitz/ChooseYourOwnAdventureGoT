@@ -88,7 +88,6 @@
                                         </state>
                                         <connections>
                                             <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="kcK-L1-xik"/>
-                                            <action selector="storyChoiceButton1Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="Aou-gN-i2Z"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
@@ -100,7 +99,6 @@
                                         </state>
                                         <connections>
                                             <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="X7x-Cv-4OS"/>
-                                            <action selector="storyChoiceButton2Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="EyJ-Qo-Q7Z"/>
                                         </connections>
                                     </button>
                                 </subviews>
