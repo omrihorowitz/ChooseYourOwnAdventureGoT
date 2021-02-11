@@ -177,6 +177,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="map" catalog="system" backIndicatorTransitionMaskImage="map" id="kqT-jG-h81">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
                             <color key="textColor" red="0.51464700880000003" green="0.31532008960000002" blue="0.1027612508" alpha="0.75333712750000004" colorSpace="custom" customColorSpace="displayP3"/>

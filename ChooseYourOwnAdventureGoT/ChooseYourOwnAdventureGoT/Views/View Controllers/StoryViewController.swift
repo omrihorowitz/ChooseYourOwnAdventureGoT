@@ -21,9 +21,7 @@ class StoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
-        let backButton = UIBarButtonItem(title: "🗺 Start a New Adventure", style: UIBarButtonItem.Style.plain, target: self, action: #selector(UIWebView.goBack))
-                navigationItem.leftBarButtonItem = backButton
-                navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Bradley Hand", size: 20)!], for: UIControl.State.normal)
+ 
     }
     
     
