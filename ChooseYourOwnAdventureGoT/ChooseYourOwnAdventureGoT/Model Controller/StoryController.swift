@@ -12,12 +12,20 @@ class StoryController {
     var storyNum = 0
     
     let jonSnowStory = [
-        Story(storyText: "", storyImage: UIImage(named: "jonsnow")!, choice1: "", choice1Destination: 1, choice2: "", choice2Destination: 4)
+        Story(storyLabel: "Together or Alone?", storyText: "Jon Snow has a hard choice to make. Does he choose to stay in Winterfell with this fam or to go on his own and join the Night Watchers?", storyImage: UIImage(named: "jonsnow")!, choice1: "Always choose family!", choice1Destination: 1, choice2: "Fuck those bastards. I'm leaving!", choice2Destination: 4)
     ]
     
     
+    func getStoryLabel() ->String {
+        return jonSnowStory[storyNum].storyLabel
+    }
+    
     func getStoryText() -> String {
         return jonSnowStory[storyNum].storyText
+    }
+    
+    func getStoryImage() -> UIImage {
+        return jonSnowStory[storyNum].storyImage
     }
     
     func getChoice1() -> String {

@@ -20,14 +20,23 @@ class StoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
     }
     
     //MARK: - Actions
     
     @IBAction func storyChoice1ButtonTapped(_ sender: Any) {
+
     }
     @IBAction func storyChoice2ButtonTapped(_ sender: Any) {
+    }
+    
+    func updateViews() {
+        storyChapterLabel.text = StoryController.shared.getStoryLabel()
+        storyChapterDescriptionLabel.text = StoryController.shared.getStoryText()
+        storyChapterImageView.image = StoryController.shared.getStoryImage()
+        storyChoice1ButtonText.setTitle(StoryController.shared.getChoice1(), for: .normal)
+        storyChoice2ButtonText.setTitle(StoryController.shared.getChoice2(), for: .normal)
     }
     
 }

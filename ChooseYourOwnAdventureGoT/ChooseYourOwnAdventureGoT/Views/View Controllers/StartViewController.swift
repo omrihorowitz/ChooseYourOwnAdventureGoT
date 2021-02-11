@@ -11,9 +11,6 @@ class StartViewController: UIViewController {
 
     //MARK: - Outlets
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,9 +22,12 @@ class StartViewController: UIViewController {
     
     
     // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "toStoryVC" {
+//
+//        }
+//
+//    }
 
 }
