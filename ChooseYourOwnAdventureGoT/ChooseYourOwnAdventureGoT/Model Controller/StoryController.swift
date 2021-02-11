@@ -36,7 +36,7 @@ class StoryController {
         Story(storyLabel: "You've Died", storyText: "Well that didn’t go according to plan…The White Walkers took you down easily, and now you’re cursed to an eternity as an undead slave! At least your trusted direwolf, Ghost, is a walker too and can keep you company. Go get some outdoors time…or press above to start a new adventure!", storyImage: UIImage(named: "youdead")!, choice1: "", choice1Destination: 0, choice2: "", choice2Destination: 0),
         
         //wildlings (8
-        Story(storyLabel: "Merging Forces", storyText: "The Wildlings are hesitant to help anyone from Westeros. You’ll have to earn their trust before they see the need to unite against the Walkers. How will you win them over?", storyImage: UIImage(named: "")!, choice1: "Feat of Love", choice1Destination: 10, choice2: "Feat of Strength", choice2Destination: 9),
+        Story(storyLabel: "Merging Forces", storyText: "The Wildlings are hesitant to help anyone from Westeros. You’ll have to earn their trust before they see the need to unite against the Walkers. How will you win them over?", storyImage: UIImage(named: "jonandwildlings")!, choice1: "Feat of Love", choice1Destination: 10, choice2: "Feat of Strength", choice2Destination: 9),
         
         //strength (9
         Story(storyLabel: "You’ve died!", storyText: "Well that didn’t go according to plan…You tried to challenge the Wildling leader to a one on one combat match to show your strength. He had some surprising moves and…well…you didn’t make it. Go get some outdoors time…or press above to start a new adventure!", storyImage: UIImage(named: "youdead")!, choice1: "", choice1Destination: 0, choice2: "", choice2Destination: 0),
@@ -63,7 +63,7 @@ class StoryController {
         Story(storyLabel: "All Hail, Queen Daenerys!", storyText: "She may get a little feisty sometimes but she’s certainly effective. Burning down half of Westeros in furious anger, Daenerys takes control of the kingdom and defeats the White Walkers!", storyImage: UIImage(named: "queendaenerys")!, choice1: "", choice1Destination: 0, choice2: "", choice2Destination: 0),
         
         //(air) (17
-        Story(storyLabel: "Dragonheart", storyText: "You steal Daenerys’ dragon and take to the skies — ice melts with fire right? Should be able to take down this Ice King guy pretty easily…", storyImage: UIImage(named: "dragon")!, choice1: "Breathe fire to the left", choice1Destination: 18, choice2: "Breathe fire to the right", choice2Destination: 18),
+        Story(storyLabel: "Dragonheart", storyText: "You steal Daenerys’ dragon and take to the skies — ice melts with fire right? Should be able to take down this Ice King guy pretty easily…", storyImage: UIImage(named: "jondragon")!, choice1: "Breathe fire to the left", choice1Destination: 18, choice2: "Breathe fire to the right", choice2Destination: 18),
         
         //(breathe fire, both buttons) (18
         Story(storyLabel: "You’ve died!", storyText: "Well that didn’t go according to plan…The Ice King is invulnerable to fire! He threw a spear at you and took you down lickity split. Go get some outdoors time…or press above to start a new adventure!", storyImage: UIImage(named: "youdead")!, choice1: "", choice1Destination: 0, choice2: "", choice2Destination: 0),
