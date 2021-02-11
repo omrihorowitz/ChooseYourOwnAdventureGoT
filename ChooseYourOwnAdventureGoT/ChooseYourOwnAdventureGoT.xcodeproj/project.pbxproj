@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6C7F176725D49EA50028564E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F176625D49EA50028564E /* StartViewController.swift */; };
 		6C7F176C25D49EB70028564E /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F176B25D49EB70028564E /* StoryViewController.swift */; };
+		6CC14A2425D5E08400953E72 /* GoTTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6CC14A2325D5E08400953E72 /* GoTTheme.mp3 */; };
 		F6257A1A25D49C2E0016574A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6257A1925D49C2E0016574A /* AppDelegate.swift */; };
 		F6257A1C25D49C2E0016574A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6257A1B25D49C2E0016574A /* SceneDelegate.swift */; };
 		F6257A2125D49C2E0016574A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6257A1F25D49C2E0016574A /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		6C7F176625D49EA50028564E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		6C7F176B25D49EB70028564E /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		6CC14A2325D5E08400953E72 /* GoTTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GoTTheme.mp3; sourceTree = "<group>"; };
 		F6257A1625D49C2E0016574A /* ChooseYourOwnAdventureGoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChooseYourOwnAdventureGoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6257A1925D49C2E0016574A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6257A1B25D49C2E0016574A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		F6257A2E25D49C4C0016574A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6CC14A2325D5E08400953E72 /* GoTTheme.mp3 */,
 				F6257A1925D49C2E0016574A /* AppDelegate.swift */,
 				F6257A1B25D49C2E0016574A /* SceneDelegate.swift */,
 				F6257A2225D49C310016574A /* Assets.xcassets */,
@@ -184,6 +187,7 @@
 				F6257A2625D49C310016574A /* LaunchScreen.storyboard in Resources */,
 				F6257A2325D49C310016574A /* Assets.xcassets in Resources */,
 				F6257A2125D49C2E0016574A /* Main.storyboard in Resources */,
+				6CC14A2425D5E08400953E72 /* GoTTheme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

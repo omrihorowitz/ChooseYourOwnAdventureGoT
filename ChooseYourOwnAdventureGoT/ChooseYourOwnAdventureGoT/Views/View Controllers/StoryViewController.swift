@@ -4,7 +4,6 @@
 //
 //  Created by Omri Horowitz on 2/10/21.
 //
-
 import UIKit
 
 class StoryViewController: UIViewController {
@@ -21,9 +20,7 @@ class StoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
- 
     }
-    
     
     //MARK: - Actions
     
