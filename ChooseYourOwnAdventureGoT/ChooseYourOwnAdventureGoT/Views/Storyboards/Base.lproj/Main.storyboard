@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aFl-vm-Rgq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Start Your Adventure-->
+        <!--Choose Your Own Adventure: GoT-->
         <scene sceneID="qTW-uo-z6D">
             <objects>
-                <viewController id="TfV-JR-FQ6" customClass="StartYourAdventureViewController" customModule="ChooseYourAdventureGOT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TfV-JR-FQ6" customClass="StartYourAdventureViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HtW-6o-0bB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,34 +18,48 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="westerosmap" translatesAutoresizingMaskIntoConstraints="NO" id="t86-9x-Axk">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-c8-ZzW">
-                                <rect key="frame" x="168" y="259" width="105" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Winterfell Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where will you start your journey? (Winterfell)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfA-Cc-dbc">
+                                <rect key="frame" x="0.0" y="797" width="414" height="65"/>
+                                <color key="backgroundColor" red="0.51464700879472669" green="0.31532008962604613" blue="0.10276125079950035" alpha="0.75333712748344372" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="p4I-2e-MD2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.66584325539609812" blue="0.30067841078309698" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.41693157318866614" green="0.25545062689408499" blue="0.08325009030754861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-c8-ZzW">
+                                <rect key="frame" x="172" y="259" width="105" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="QZQ-jK-4E7"/>
+                                </constraints>
                                 <connections>
                                     <action selector="winterfellButtonTapped:" destination="TfV-JR-FQ6" eventType="touchUpInside" id="iJF-qX-eW3"/>
                                     <segue destination="X1c-Zh-RlO" kind="show" identifier="toStoryVC" id="vT3-0c-d4y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfA-Cc-dbc">
-                                <rect key="frame" x="10" y="779" width="384" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gj7-4g-TEZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="0.84589714403973515" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sFi-c8-ZzW" firstAttribute="leading" secondItem="Gj7-4g-TEZ" secondAttribute="leading" constant="172" id="5XO-kL-mhx"/>
+                            <constraint firstItem="Gj7-4g-TEZ" firstAttribute="trailing" secondItem="sFi-c8-ZzW" secondAttribute="trailing" constant="137" id="9EW-jt-Tfm"/>
                             <constraint firstItem="Gj7-4g-TEZ" firstAttribute="bottom" secondItem="t86-9x-Axk" secondAttribute="bottom" id="DeW-fV-lHf"/>
                             <constraint firstItem="t86-9x-Axk" firstAttribute="leading" secondItem="Gj7-4g-TEZ" secondAttribute="leading" id="Oec-ju-feA"/>
                             <constraint firstItem="Gj7-4g-TEZ" firstAttribute="trailing" secondItem="t86-9x-Axk" secondAttribute="trailing" id="UPb-po-faa"/>
+                            <constraint firstItem="sFi-c8-ZzW" firstAttribute="top" secondItem="Gj7-4g-TEZ" secondAttribute="top" constant="171" id="XJU-DO-u9q"/>
                             <constraint firstItem="t86-9x-Axk" firstAttribute="top" secondItem="Gj7-4g-TEZ" secondAttribute="top" id="Xx4-1v-hQS"/>
+                            <constraint firstItem="tfA-Cc-dbc" firstAttribute="trailing" secondItem="Gj7-4g-TEZ" secondAttribute="trailing" id="okY-ox-ACz"/>
+                            <constraint firstItem="tfA-Cc-dbc" firstAttribute="leading" secondItem="Gj7-4g-TEZ" secondAttribute="leading" id="t14-iA-5WJ"/>
+                            <constraint firstItem="tfA-Cc-dbc" firstAttribute="bottom" secondItem="Gj7-4g-TEZ" secondAttribute="bottom" id="xjr-5x-Ng6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Start Your Adventure" id="It8-nk-bEo"/>
+                    <navigationItem key="navigationItem" title="Choose Your Own Adventure: GoT" id="It8-nk-bEo" colorLabel="IBBuiltInLabel-Orange">
+                        <barButtonItem key="backBarButtonItem" title="Start a New Adventure" id="yXl-8p-BAg"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wua-rn-9sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +68,7 @@
         <!--Story Choices View Controller-->
         <scene sceneID="Anh-Jv-BaZ">
             <objects>
-                <viewController id="X1c-Zh-RlO" customClass="StoryChoicesViewController" customModule="ChooseYourAdventureGOT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X1c-Zh-RlO" customClass="StoryChoicesViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIg-be-B1W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,54 +76,88 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gotappbackground" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-ml-gHq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-id-K51">
-                                <rect key="frame" x="20" y="737" width="165" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <state key="normal" title="Story Choice 1"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-id-K51">
+                                <rect key="frame" x="20" y="737" width="162" height="97"/>
+                                <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74599027317880795" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                <state key="normal" title="Story Choice 1">
+                                    <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="QLl-Ig-GyM"/>
                                     <action selector="storyChoiceButton1Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="Aou-gN-i2Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
-                                <rect key="frame" x="229" y="737" width="165" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <state key="normal" title="Story Choice 2"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
+                                <rect key="frame" x="234" y="737" width="160" height="97"/>
+                                <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Fy0-in-NNL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                <state key="normal" title="Story Choice 2">
+                                    <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="eUc-QF-b9e"/>
                                     <action selector="storyChoiceButton2Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="EyJ-Qo-Q7Z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Chapter Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-Jq-4Kc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-Jq-4Kc">
                                 <rect key="frame" x="36" y="111" width="339" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74961196192052981" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="qG1-F5-0VD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <color key="textColor" red="0.32395296522600203" green="0.64792187318076777" blue="0.72543797348484851" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jonsnow" translatesAutoresizingMaskIntoConstraints="NO" id="YSf-te-Wgx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jonsnow" translatesAutoresizingMaskIntoConstraints="NO" id="YSf-te-Wgx">
                                 <rect key="frame" x="36" y="212" width="339" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="354" id="Cb5-Cp-pIG"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Chapter Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oap-ZR-xjp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oap-ZR-xjp">
                                 <rect key="frame" x="36" y="597" width="339" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="098-sm-EJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
+                                <color key="textColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kjy-3p-xwf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="YSf-te-Wgx" secondAttribute="trailing" constant="39" id="5Ec-Ei-Jf8"/>
+                            <constraint firstItem="oap-ZR-xjp" firstAttribute="top" secondItem="YSf-te-Wgx" secondAttribute="bottom" constant="31" id="6NX-Gd-43L"/>
+                            <constraint firstItem="JPh-id-K51" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="20" id="6VD-7A-MoD"/>
+                            <constraint firstItem="RDj-Jq-4Kc" firstAttribute="top" secondItem="kjy-3p-xwf" secondAttribute="top" constant="23" id="B1J-ma-yWY"/>
+                            <constraint firstItem="oap-ZR-xjp" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.147287" id="EQx-5f-Ecy"/>
+                            <constraint firstItem="YSf-te-Wgx" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="Fp2-yS-2BE"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="RDj-Jq-4Kc" secondAttribute="trailing" constant="39" id="LAU-wI-Vvh"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="JPh-id-K51" secondAttribute="bottom" constant="28" id="LPB-in-VDU"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="NHQ-ml-gHq" secondAttribute="trailing" id="Lrm-0a-fAX"/>
                             <constraint firstItem="NHQ-ml-gHq" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" id="P6f-jd-9OE"/>
+                            <constraint firstItem="ddE-hL-sxh" firstAttribute="firstBaseline" secondItem="JPh-id-K51" secondAttribute="baseline" id="Qom-qH-9Q6"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="oap-ZR-xjp" secondAttribute="trailing" constant="39" id="Rl2-Ci-F78"/>
+                            <constraint firstItem="oap-ZR-xjp" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="Uch-KR-q7w"/>
                             <constraint firstItem="NHQ-ml-gHq" firstAttribute="top" secondItem="kjy-3p-xwf" secondAttribute="top" id="Y50-Rj-CCe"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="NHQ-ml-gHq" secondAttribute="bottom" id="aC9-3d-Y3W"/>
+                            <constraint firstItem="JPh-id-K51" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.125323" id="br2-P4-oNJ"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="ddE-hL-sxh" secondAttribute="bottom" constant="28" id="ebZ-22-yvC"/>
+                            <constraint firstItem="JPh-id-K51" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="26" id="jEg-Ly-9qg"/>
+                            <constraint firstItem="ddE-hL-sxh" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="26" id="pAI-Al-pkv"/>
+                            <constraint firstItem="RDj-Jq-4Kc" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="sFw-Na-KDw"/>
+                            <constraint firstItem="YSf-te-Wgx" firstAttribute="top" secondItem="RDj-Jq-4Kc" secondAttribute="bottom" constant="34" id="uAg-U0-BbQ"/>
+                            <constraint firstItem="ddE-hL-sxh" firstAttribute="trailing" secondItem="TIg-be-B1W" secondAttribute="trailingMargin" id="w0a-rE-8c0"/>
+                            <constraint firstItem="ddE-hL-sxh" firstAttribute="leading" secondItem="JPh-id-K51" secondAttribute="trailing" constant="52" id="zCo-xm-kE7"/>
+                            <constraint firstItem="ddE-hL-sxh" firstAttribute="top" secondItem="JPh-id-K51" secondAttribute="top" id="zmg-IZ-Txz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hqi-Br-FG2"/>
@@ -149,14 +196,5 @@
         <image name="gotappbackground" width="750" height="1334"/>
         <image name="jonsnow" width="449" height="488"/>
         <image name="westerosmap" width="720" height="1080"/>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
