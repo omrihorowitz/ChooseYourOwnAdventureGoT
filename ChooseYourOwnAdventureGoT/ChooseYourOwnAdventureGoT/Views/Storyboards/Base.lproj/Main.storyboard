@@ -76,48 +76,53 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gotappbackground" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-ml-gHq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-id-K51">
-                                <rect key="frame" x="20" y="737" width="162" height="97"/>
-                                <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74599027317880795" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
-                                <state key="normal" title="Story Choice 1">
-                                    <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="kcK-L1-xik"/>
-                                    <action selector="storyChoiceButton1Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="Aou-gN-i2Z"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
-                                <rect key="frame" x="234" y="737" width="160" height="97"/>
-                                <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="uvN-q1-521">
+                                <rect key="frame" x="36" y="731.5" width="342" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-id-K51">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="100"/>
+                                        <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74599027317880795" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                        <state key="normal" title="Story Choice 1">
+                                            <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="kcK-L1-xik"/>
+                                            <action selector="storyChoiceButton1Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="Aou-gN-i2Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
+                                        <rect key="frame" x="196" y="0.0" width="146" height="100"/>
+                                        <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                        <state key="normal" title="Story Choice 2">
+                                            <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="X7x-Cv-4OS"/>
+                                            <action selector="storyChoiceButton2Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="EyJ-Qo-Q7Z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Fy0-in-NNL"/>
+                                    <constraint firstAttribute="height" constant="100" id="c8g-j6-QtH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
-                                <state key="normal" title="Story Choice 2">
-                                    <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="X7x-Cv-4OS"/>
-                                    <action selector="storyChoiceButton2Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="EyJ-Qo-Q7Z"/>
-                                </connections>
-                            </button>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-Jq-4Kc">
-                                <rect key="frame" x="36" y="111" width="339" height="50.5"/>
+                                <rect key="frame" x="36" y="103" width="339" height="82.5"/>
                                 <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74961196192052981" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
                                 <color key="textColor" red="0.32395296522600203" green="0.64792187318076777" blue="0.72543797348484851" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jonsnow" translatesAutoresizingMaskIntoConstraints="NO" id="YSf-te-Wgx">
-                                <rect key="frame" x="36" y="212" width="339" height="354"/>
+                                <rect key="frame" x="13.5" y="200.5" width="387" height="387"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="354" id="Cb5-Cp-pIG"/>
+                                    <constraint firstAttribute="width" secondItem="YSf-te-Wgx" secondAttribute="height" multiplier="1:1" id="1PR-F7-hMv"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oap-ZR-xjp">
-                                <rect key="frame" x="36" y="597" width="339" height="114"/>
+                                <rect key="frame" x="36" y="602.5" width="339" height="114"/>
                                 <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="098-sm-EJ1"/>
@@ -131,29 +136,24 @@
                         <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="YSf-te-Wgx" secondAttribute="trailing" constant="39" id="5Ec-Ei-Jf8"/>
-                            <constraint firstItem="oap-ZR-xjp" firstAttribute="top" secondItem="YSf-te-Wgx" secondAttribute="bottom" constant="31" id="6NX-Gd-43L"/>
-                            <constraint firstItem="JPh-id-K51" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="20" id="6VD-7A-MoD"/>
-                            <constraint firstItem="RDj-Jq-4Kc" firstAttribute="top" secondItem="kjy-3p-xwf" secondAttribute="top" constant="23" id="B1J-ma-yWY"/>
+                            <constraint firstItem="oap-ZR-xjp" firstAttribute="top" secondItem="YSf-te-Wgx" secondAttribute="bottom" constant="15" id="6NX-Gd-43L"/>
+                            <constraint firstItem="RDj-Jq-4Kc" firstAttribute="top" secondItem="kjy-3p-xwf" secondAttribute="top" constant="15" id="B1J-ma-yWY"/>
                             <constraint firstItem="oap-ZR-xjp" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.147287" id="EQx-5f-Ecy"/>
-                            <constraint firstItem="YSf-te-Wgx" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="Fp2-yS-2BE"/>
+                            <constraint firstItem="uvN-q1-521" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="15" id="KXH-Y6-9Jo"/>
+                            <constraint firstItem="uvN-q1-521" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="Kls-oP-sZ2"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="RDj-Jq-4Kc" secondAttribute="trailing" constant="39" id="LAU-wI-Vvh"/>
-                            <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="JPh-id-K51" secondAttribute="bottom" constant="28" id="LPB-in-VDU"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="NHQ-ml-gHq" secondAttribute="trailing" id="Lrm-0a-fAX"/>
                             <constraint firstItem="NHQ-ml-gHq" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" id="P6f-jd-9OE"/>
-                            <constraint firstItem="ddE-hL-sxh" firstAttribute="firstBaseline" secondItem="JPh-id-K51" secondAttribute="baseline" id="Qom-qH-9Q6"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="oap-ZR-xjp" secondAttribute="trailing" constant="39" id="Rl2-Ci-F78"/>
                             <constraint firstItem="oap-ZR-xjp" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="Uch-KR-q7w"/>
                             <constraint firstItem="NHQ-ml-gHq" firstAttribute="top" secondItem="kjy-3p-xwf" secondAttribute="top" id="Y50-Rj-CCe"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="NHQ-ml-gHq" secondAttribute="bottom" id="aC9-3d-Y3W"/>
-                            <constraint firstItem="JPh-id-K51" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.125323" id="br2-P4-oNJ"/>
-                            <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="ddE-hL-sxh" secondAttribute="bottom" constant="28" id="ebZ-22-yvC"/>
-                            <constraint firstItem="JPh-id-K51" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="26" id="jEg-Ly-9qg"/>
-                            <constraint firstItem="ddE-hL-sxh" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="26" id="pAI-Al-pkv"/>
+                            <constraint firstItem="YSf-te-Wgx" firstAttribute="centerX" secondItem="kjy-3p-xwf" secondAttribute="centerX" id="cTf-ba-DRD"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="uvN-q1-521" secondAttribute="bottom" constant="30.5" id="dHP-bl-nV2"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="uvN-q1-521" secondAttribute="trailing" constant="36" id="q56-et-eHc"/>
+                            <constraint firstItem="YSf-te-Wgx" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.5" id="rv7-Pb-ALN"/>
                             <constraint firstItem="RDj-Jq-4Kc" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="sFw-Na-KDw"/>
-                            <constraint firstItem="ddE-hL-sxh" firstAttribute="trailing" secondItem="TIg-be-B1W" secondAttribute="trailingMargin" id="w0a-rE-8c0"/>
-                            <constraint firstItem="ddE-hL-sxh" firstAttribute="leading" secondItem="JPh-id-K51" secondAttribute="trailing" constant="52" id="zCo-xm-kE7"/>
-                            <constraint firstItem="ddE-hL-sxh" firstAttribute="top" secondItem="JPh-id-K51" secondAttribute="top" id="zmg-IZ-Txz"/>
+                            <constraint firstItem="YSf-te-Wgx" firstAttribute="top" secondItem="RDj-Jq-4Kc" secondAttribute="bottom" constant="15" id="wwL-mJ-gw2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hqi-Br-FG2"/>
