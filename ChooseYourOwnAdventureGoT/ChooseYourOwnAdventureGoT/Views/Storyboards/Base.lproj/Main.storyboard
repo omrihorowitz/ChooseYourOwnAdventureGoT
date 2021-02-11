@@ -18,7 +18,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="westerosmap" translatesAutoresizingMaskIntoConstraints="NO" id="t86-9x-Axk">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where will you start your journey? (Winterfell)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfA-Cc-dbc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where will you start your journey? (Winterfell)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfA-Cc-dbc">
                                 <rect key="frame" x="0.0" y="797" width="414" height="65"/>
                                 <color key="backgroundColor" red="0.51464700879472669" green="0.31532008962604613" blue="0.10276125079950035" alpha="0.75333712748344372" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -58,7 +58,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Choose Your Own Adventure: GoT" id="It8-nk-bEo" colorLabel="IBBuiltInLabel-Orange">
-                        <barButtonItem key="backBarButtonItem" title="Start a New Adventure" id="yXl-8p-BAg"/>
+                        <barButtonItem key="backBarButtonItem" title="Start a New Adventure" id="QEd-2e-PJ8"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wua-rn-9sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -68,7 +68,7 @@
         <!--Story View Controller-->
         <scene sceneID="Anh-Jv-BaZ">
             <objects>
-                <viewController id="X1c-Zh-RlO" customClass="StoryViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="X1c-Zh-RlO" customClass="StoryViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIg-be-B1W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,9 @@
                             <constraint firstItem="YSf-te-Wgx" firstAttribute="top" secondItem="RDj-Jq-4Kc" secondAttribute="bottom" constant="15" id="wwL-mJ-gw2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hqi-Br-FG2"/>
+                    <navigationItem key="navigationItem" id="hqi-Br-FG2">
+                        <barButtonItem key="backBarButtonItem" title="Start a New Adventure" id="P39-o3-SAM"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="storyChapterDescriptionLabel" destination="oap-ZR-xjp" id="YdO-Hr-fIx"/>
                         <outlet property="storyChapterImageView" destination="YSf-te-Wgx" id="Dlq-Fo-iTY"/>
@@ -174,12 +176,16 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aFl-vm-Rgq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kqT-jG-h81">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="map" catalog="system" backIndicatorTransitionMaskImage="map" id="kqT-jG-h81">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
                             <color key="textColor" red="0.51464700880000003" green="0.31532008960000002" blue="0.1027612508" alpha="0.75333712750000004" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                            <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="0.64634209440000001" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -195,6 +201,7 @@
     <resources>
         <image name="gotappbackground" width="750" height="1334"/>
         <image name="jonsnow" width="449" height="488"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="westerosmap" width="720" height="1080"/>
     </resources>
 </document>
