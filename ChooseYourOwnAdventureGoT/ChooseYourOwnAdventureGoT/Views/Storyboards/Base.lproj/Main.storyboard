@@ -10,7 +10,7 @@
         <!--Choose Your Own Adventure: GoT-->
         <scene sceneID="qTW-uo-z6D">
             <objects>
-                <viewController id="TfV-JR-FQ6" customClass="StartYourAdventureViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TfV-JR-FQ6" customClass="StartViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HtW-6o-0bB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="59" id="QZQ-jK-4E7"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="winterfellButtonTapped:" destination="TfV-JR-FQ6" eventType="touchUpInside" id="iJF-qX-eW3"/>
+                                    <action selector="winterfellButtonTapped:" destination="TfV-JR-FQ6" eventType="touchUpInside" id="s1P-8J-dtL"/>
                                     <segue destination="X1c-Zh-RlO" kind="show" identifier="toStoryVC" id="vT3-0c-d4y"/>
                                 </connections>
                             </button>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="971.01449275362324" y="30.803571428571427"/>
         </scene>
-        <!--Story Choices View Controller-->
+        <!--Story View Controller-->
         <scene sceneID="Anh-Jv-BaZ">
             <objects>
-                <viewController id="X1c-Zh-RlO" customClass="StoryChoicesViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X1c-Zh-RlO" customClass="StoryViewController" customModule="ChooseYourOwnAdventureGoT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIg-be-B1W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
                                     <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="QLl-Ig-GyM"/>
+                                    <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="kcK-L1-xik"/>
                                     <action selector="storyChoiceButton1Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="Aou-gN-i2Z"/>
                                 </connections>
                             </button>
@@ -99,16 +99,13 @@
                                     <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="eUc-QF-b9e"/>
+                                    <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="X7x-Cv-4OS"/>
                                     <action selector="storyChoiceButton2Tapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="EyJ-Qo-Q7Z"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-Jq-4Kc">
-                                <rect key="frame" x="36" y="111" width="339" height="67"/>
+                                <rect key="frame" x="36" y="111" width="339" height="50.5"/>
                                 <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74961196192052981" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="qG1-F5-0VD"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
                                 <color key="textColor" red="0.32395296522600203" green="0.64792187318076777" blue="0.72543797348484851" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -154,7 +151,6 @@
                             <constraint firstItem="JPh-id-K51" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="26" id="jEg-Ly-9qg"/>
                             <constraint firstItem="ddE-hL-sxh" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="26" id="pAI-Al-pkv"/>
                             <constraint firstItem="RDj-Jq-4Kc" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="sFw-Na-KDw"/>
-                            <constraint firstItem="YSf-te-Wgx" firstAttribute="top" secondItem="RDj-Jq-4Kc" secondAttribute="bottom" constant="34" id="uAg-U0-BbQ"/>
                             <constraint firstItem="ddE-hL-sxh" firstAttribute="trailing" secondItem="TIg-be-B1W" secondAttribute="trailingMargin" id="w0a-rE-8c0"/>
                             <constraint firstItem="ddE-hL-sxh" firstAttribute="leading" secondItem="JPh-id-K51" secondAttribute="trailing" constant="52" id="zCo-xm-kE7"/>
                             <constraint firstItem="ddE-hL-sxh" firstAttribute="top" secondItem="JPh-id-K51" secondAttribute="top" id="zmg-IZ-Txz"/>
@@ -162,11 +158,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="hqi-Br-FG2"/>
                     <connections>
-                        <outlet property="storyChapterDescriptionLabel" destination="oap-ZR-xjp" id="LXm-Uo-fcf"/>
-                        <outlet property="storyChapterImageView" destination="YSf-te-Wgx" id="W6h-kP-hxe"/>
-                        <outlet property="storyChapterLabel" destination="RDj-Jq-4Kc" id="ZG4-KZ-4km"/>
-                        <outlet property="storyChoice1ButtonText" destination="JPh-id-K51" id="LeO-6E-azu"/>
-                        <outlet property="storyChoice2ButtonText" destination="ddE-hL-sxh" id="rgw-Zo-NLF"/>
+                        <outlet property="storyChapterDescriptionLabel" destination="oap-ZR-xjp" id="YdO-Hr-fIx"/>
+                        <outlet property="storyChapterImageView" destination="YSf-te-Wgx" id="Dlq-Fo-iTY"/>
+                        <outlet property="storyChapterLabel" destination="RDj-Jq-4Kc" id="BNQ-Tq-hh9"/>
+                        <outlet property="storyChoice1ButtonText" destination="JPh-id-K51" id="PBB-u3-l1G"/>
+                        <outlet property="storyChoice2ButtonText" destination="ddE-hL-sxh" id="Nfu-mh-PGx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbc-gk-rZ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -181,6 +177,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kqT-jG-h81">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                            <color key="textColor" red="0.51464700880000003" green="0.31532008960000002" blue="0.1027612508" alpha="0.75333712750000004" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
