@@ -24,7 +24,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="p4I-2e-MD2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.66584325539609812" blue="0.30067841078309698" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.41693157318866614" green="0.25545062689408499" blue="0.08325009030754861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -93,19 +93,19 @@
                                 <rect key="frame" x="16" y="578.5" width="382" height="275.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Story Chapter Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="oap-ZR-xjp">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="198.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="157.5"/>
                                         <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                         <color key="textColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="uvN-q1-521">
-                                        <rect key="frame" x="0.0" y="206.5" width="382" height="69"/>
+                                        <rect key="frame" x="0.0" y="165.5" width="382" height="110"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-id-K51">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="69"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="110"/>
                                                 <color key="backgroundColor" red="0.15294117647058825" green="0.60251963139999998" blue="0.68236678839999998" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                                 <state key="normal" title="Story Choice 1">
                                                     <color key="titleColor" red="0.1058823529" green="0.26238328220000001" blue="0.28235721590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -114,9 +114,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
-                                                <rect key="frame" x="216" y="0.0" width="166" height="69"/>
+                                                <rect key="frame" x="216" y="0.0" width="166" height="110"/>
                                                 <color key="backgroundColor" red="0.17626705770000001" green="0.61120522020000001" blue="0.63922369479999996" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
                                                 <state key="normal" title="Story Choice 2">
                                                     <color key="titleColor" red="0.10781801489999999" green="0.26238328220000001" blue="0.28235721590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -128,7 +128,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="uvN-q1-521" firstAttribute="height" secondItem="dxb-bd-P9Y" secondAttribute="height" multiplier="0.25" id="HjX-QT-28c"/>
+                                    <constraint firstItem="uvN-q1-521" firstAttribute="height" secondItem="dxb-bd-P9Y" secondAttribute="height" multiplier="0.4" id="HjX-QT-28c"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -178,7 +178,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                             <color key="textColor" red="0.51464700880000003" green="0.31532008960000002" blue="0.1027612508" alpha="0.75333712750000004" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
