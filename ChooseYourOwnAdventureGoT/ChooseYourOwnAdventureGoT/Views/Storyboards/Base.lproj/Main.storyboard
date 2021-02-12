@@ -76,82 +76,81 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gotappbackground" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-ml-gHq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="uvN-q1-521">
-                                <rect key="frame" x="36" y="731.5" width="342" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-id-K51">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="100"/>
-                                        <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74599027317880795" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
-                                        <state key="normal" title="Story Choice 1">
-                                            <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="kcK-L1-xik"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
-                                        <rect key="frame" x="196" y="0.0" width="146" height="100"/>
-                                        <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
-                                        <state key="normal" title="Story Choice 2">
-                                            <color key="titleColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="X7x-Cv-4OS"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="c8g-j6-QtH"/>
-                                </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-Jq-4Kc">
-                                <rect key="frame" x="36" y="103" width="339" height="82.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="RDj-Jq-4Kc">
+                                <rect key="frame" x="16" y="103" width="382" height="77.5"/>
                                 <color key="backgroundColor" red="0.13539603725710506" green="0.27079873777255126" blue="0.30319656687553487" alpha="0.74961196192052981" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
                                 <color key="textColor" red="0.32395296522600203" green="0.64792187318076777" blue="0.72543797348484851" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jonsnow" translatesAutoresizingMaskIntoConstraints="NO" id="YSf-te-Wgx">
-                                <rect key="frame" x="13.5" y="200.5" width="387" height="387"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jonsnow" translatesAutoresizingMaskIntoConstraints="NO" id="YSf-te-Wgx">
+                                <rect key="frame" x="16" y="188.5" width="382" height="382"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YSf-te-Wgx" secondAttribute="height" multiplier="1:1" id="1PR-F7-hMv"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Chapter Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oap-ZR-xjp">
-                                <rect key="frame" x="36" y="602.5" width="339" height="114"/>
-                                <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dxb-bd-P9Y">
+                                <rect key="frame" x="16" y="578.5" width="382" height="275.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Story Chapter Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="oap-ZR-xjp">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="198.5"/>
+                                        <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
+                                        <color key="textColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="uvN-q1-521">
+                                        <rect key="frame" x="0.0" y="206.5" width="382" height="69"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-id-K51">
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="69"/>
+                                                <color key="backgroundColor" red="0.15294117647058825" green="0.60251963139999998" blue="0.68236678839999998" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                                <state key="normal" title="Story Choice 1">
+                                                    <color key="titleColor" red="0.1058823529" green="0.26238328220000001" blue="0.28235721590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyChoice1ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="kcK-L1-xik"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-hL-sxh">
+                                                <rect key="frame" x="216" y="0.0" width="166" height="69"/>
+                                                <color key="backgroundColor" red="0.17626705770000001" green="0.61120522020000001" blue="0.63922369479999996" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="12"/>
+                                                <state key="normal" title="Story Choice 2">
+                                                    <color key="titleColor" red="0.10781801489999999" green="0.26238328220000001" blue="0.28235721590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyChoice2ButtonTapped:" destination="X1c-Zh-RlO" eventType="touchUpInside" id="X7x-Cv-4OS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="098-sm-EJ1"/>
+                                    <constraint firstItem="uvN-q1-521" firstAttribute="height" secondItem="dxb-bd-P9Y" secondAttribute="height" multiplier="0.25" id="HjX-QT-28c"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
-                                <color key="textColor" red="0.3239529652" green="0.64792187320000005" blue="0.72543797350000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kjy-3p-xwf"/>
                         <color key="backgroundColor" red="0.13539603729999999" green="0.27079873780000002" blue="0.30319656690000002" alpha="0.84589714400000005" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oap-ZR-xjp" firstAttribute="top" secondItem="YSf-te-Wgx" secondAttribute="bottom" constant="15" id="6NX-Gd-43L"/>
                             <constraint firstItem="RDj-Jq-4Kc" firstAttribute="top" secondItem="kjy-3p-xwf" secondAttribute="top" constant="15" id="B1J-ma-yWY"/>
-                            <constraint firstItem="oap-ZR-xjp" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.147287" id="EQx-5f-Ecy"/>
-                            <constraint firstItem="uvN-q1-521" firstAttribute="top" secondItem="oap-ZR-xjp" secondAttribute="bottom" constant="15" id="KXH-Y6-9Jo"/>
-                            <constraint firstItem="uvN-q1-521" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="Kls-oP-sZ2"/>
-                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="RDj-Jq-4Kc" secondAttribute="trailing" constant="39" id="LAU-wI-Vvh"/>
+                            <constraint firstItem="YSf-te-Wgx" firstAttribute="top" secondItem="RDj-Jq-4Kc" secondAttribute="bottom" constant="8" id="DDy-gL-JLv"/>
+                            <constraint firstItem="dxb-bd-P9Y" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="16" id="JqW-RN-Egj"/>
+                            <constraint firstItem="dxb-bd-P9Y" firstAttribute="top" secondItem="YSf-te-Wgx" secondAttribute="bottom" constant="8" id="KQd-i9-X91"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="RDj-Jq-4Kc" secondAttribute="trailing" constant="16" id="LAU-wI-Vvh"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="dxb-bd-P9Y" secondAttribute="trailing" constant="16" id="LHC-vX-xUG"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="NHQ-ml-gHq" secondAttribute="trailing" id="Lrm-0a-fAX"/>
                             <constraint firstItem="NHQ-ml-gHq" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" id="P6f-jd-9OE"/>
-                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="oap-ZR-xjp" secondAttribute="trailing" constant="39" id="Rl2-Ci-F78"/>
-                            <constraint firstItem="oap-ZR-xjp" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="Uch-KR-q7w"/>
+                            <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="dxb-bd-P9Y" secondAttribute="bottom" constant="8" id="UrG-OZ-FW1"/>
                             <constraint firstItem="NHQ-ml-gHq" firstAttribute="top" secondItem="kjy-3p-xwf" secondAttribute="top" id="Y50-Rj-CCe"/>
                             <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="NHQ-ml-gHq" secondAttribute="bottom" id="aC9-3d-Y3W"/>
-                            <constraint firstItem="YSf-te-Wgx" firstAttribute="centerX" secondItem="kjy-3p-xwf" secondAttribute="centerX" id="cTf-ba-DRD"/>
-                            <constraint firstItem="kjy-3p-xwf" firstAttribute="bottom" secondItem="uvN-q1-521" secondAttribute="bottom" constant="30.5" id="dHP-bl-nV2"/>
-                            <constraint firstItem="kjy-3p-xwf" firstAttribute="trailing" secondItem="uvN-q1-521" secondAttribute="trailing" constant="36" id="q56-et-eHc"/>
-                            <constraint firstItem="YSf-te-Wgx" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.5" id="rv7-Pb-ALN"/>
-                            <constraint firstItem="RDj-Jq-4Kc" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="36" id="sFw-Na-KDw"/>
-                            <constraint firstItem="YSf-te-Wgx" firstAttribute="top" secondItem="RDj-Jq-4Kc" secondAttribute="bottom" constant="15" id="wwL-mJ-gw2"/>
+                            <constraint firstItem="YSf-te-Wgx" firstAttribute="leading" secondItem="TIg-be-B1W" secondAttribute="leading" constant="16" id="cfz-UH-SmQ"/>
+                            <constraint firstItem="RDj-Jq-4Kc" firstAttribute="height" secondItem="NHQ-ml-gHq" secondAttribute="height" multiplier="0.1" id="gRu-LU-4my"/>
+                            <constraint firstAttribute="trailing" secondItem="YSf-te-Wgx" secondAttribute="trailing" constant="16" id="gss-0B-KtF"/>
+                            <constraint firstItem="RDj-Jq-4Kc" firstAttribute="leading" secondItem="kjy-3p-xwf" secondAttribute="leading" constant="16" id="sFw-Na-KDw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hqi-Br-FG2">
